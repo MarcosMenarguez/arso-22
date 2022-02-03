@@ -85,7 +85,6 @@ public class Main {
 		
 		transformacion.transform(input, output);
 			
-
 		System.out.println("fin.");
 	}
 }
