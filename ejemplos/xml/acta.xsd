@@ -56,11 +56,11 @@
 			<xs:extension base="tipoCalificacion">
 				<xs:attribute name="fecha" type="xs:date" use="required" />
 				<xs:attribute name="extraordinaria" use="optional"
-					default="No">
+					default="no">
 					<xs:simpleType>
 						<xs:restriction base="xs:string">
-							<xs:enumeration value="Sí" />
-							<xs:enumeration value="No" />
+							<xs:enumeration value="si" />
+							<xs:enumeration value="no" />
 						</xs:restriction>
 					</xs:simpleType>
 				</xs:attribute>

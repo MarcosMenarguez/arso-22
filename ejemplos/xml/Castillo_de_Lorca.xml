@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:dct="http://purl.org/dc/terms/"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:prop-es="http://es.dbpedia.org/property/"
+	xmlns:dbo="http://dbpedia.org/ontology/"
+	xmlns:prov="http://www.w3.org/ns/prov#">
+	<rdf:Description
+		rdf:about="http://es.dbpedia.org/resource/Castillo_de_lorca">
+		<dbo:wikiPageRedirects
+			rdf:resource="http://es.dbpedia.org/resource/Castillo_de_Lorca" />
+	</rdf:Description>
+	<rdf:Description
+		rdf:about="http://es.dbpedia.org/resource/Fortaleza_del_Sol">
+		<dbo:wikiPageRedirects
+			rdf:resource="http://es.dbpedia.org/resource/Castillo_de_Lorca" />
+	</rdf:Description>
+	<rdf:Description
+		rdf:about="http://dbpedia.org/resource/Castle_of_Lorca">
+		<owl:sameAs	rdf:resource="http://es.dbpedia.org/resource/Castillo_de_Lorca" />
+	</rdf:Description>
+	<rdf:Description
+		rdf:about="http://es.dbpedia.org/resource/Judería_de_Lorca">
+		<dbo:wikiPageRedirects
+			rdf:resource="http://es.dbpedia.org/resource/Castillo_de_Lorca" />
+	</rdf:Description>
+	<rdf:Description
+		rdf:about="http://es.dbpedia.org/resource/Castillo_de_Lorca">
+		<rdfs:label xml:lang="es">Castillo de Lorca</rdfs:label>
+		<rdfs:comment xml:lang="es">El Castillo de Lorca (Murcia,
+			España) es una fortaleza de origen medieval construida entre los
+			siglos IX y XV. Comprende una serie de estructuras defensivas que,
+			durante la Edad Media, convirtieron a la ciudad y a su fortaleza en
+			un punto inexpugnable del sureste peninsular. El castillo de Lorca
+			fue un bastión clave en las contiendas entre cristianos y musulmanes
+			en la frontera de Granada. Se encuentra catalogado como Bien de
+			Interés Cultural​ y dentro de la delimitación del conjunto
+			histórico-artístico de Lorca.​​</rdfs:comment>
+		<owl:sameAs
+			rdf:resource="http://es.dbpedia.org/resource/Castillo_de_Lorca" />
+		<owl:sameAs
+			rdf:resource="http://rdf.freebase.com/ns/m.0gtxtq2" />
+		<dct:subject
+			rdf:resource="http://es.dbpedia.org/resource/Categoría:Castillos_de_España_del_siglo_IX" />
+		<dct:subject
+			rdf:resource="http://es.dbpedia.org/resource/Categoría:Bienes_de_interés_cultural_de_Lorca" />
+		<dct:subject
+			rdf:resource="http://es.dbpedia.org/resource/Categoría:Paradores_de_Turismo" />
+		<dct:subject
+			rdf:resource="http://es.dbpedia.org/resource/Categoría:Fortificaciones_de_al-Ándalus" />
+		<dct:subject
+			rdf:resource="http://es.dbpedia.org/resource/Categoría:Hoteles_de_la_Región_de_Murcia" />
+		<dct:subject
+			rdf:resource="http://es.dbpedia.org/resource/Categoría:Castillos_de_la_Región_de_Murcia" />
+		<dct:subject
+			rdf:resource="http://es.dbpedia.org/resource/Categoría:Arquitectura_gótica_de_la_Región_de_Murcia" />
+		<dct:subject
+			rdf:resource="http://es.dbpedia.org/resource/Categoría:Museos_de_Lorca" />
+		<dct:subject
+			rdf:resource="http://es.dbpedia.org/resource/Categoría:Monumentos_histórico-artísticos_de_España_declarados_en_1931" />
+		<dct:subject
+			rdf:resource="http://es.dbpedia.org/resource/Categoría:Historia_de_Lorca" />
+		<foaf:isPrimaryTopicOf
+			rdf:resource="http://es.wikipedia.org/wiki/Castillo_de_Lorca" />
+		<prop-es:autor xml:lang="es">Sala Vallejo, Rosalía
+		</prop-es:autor>
+		<prop-es:autor xml:lang="es">VV.AA</prop-es:autor>
+		<!-- <p: xmlns:p="http://es.dbpedia.org/property/año" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1997</p:> -->
+		<!-- <p: xmlns:p="http://es.dbpedia.org/property/año" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1998</p:> -->
+		<!-- <p: xmlns:p="http://es.dbpedia.org/property/código" xml:lang="es">RI-53-0000044</p:> -->
+		<!-- <p: xmlns:p="http://es.dbpedia.org/property/declaración" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1964-03-05</p:> -->
+		<prop-es:editorial xml:lang="es">Everest
+		</prop-es:editorial>
+		<prop-es:editorial xml:lang="es">R. Sala Vallejo
+		</prop-es:editorial>
+		<prop-es:figura xml:lang="es">Monumento</prop-es:figura>
+		<prop-es:final xml:lang="es">siglo XV</prop-es:final>
+		<prop-es:imagen xml:lang="es">Castillo_de_Lorca1.jpg
+		</prop-es:imagen>
+		<prop-es:inicio xml:lang="es">siglo IX</prop-es:inicio>
+		<prop-es:isbn
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">84</prop-es:isbn>
+		<prop-es:nombre xml:lang="es">Castillo de Lorca
+		</prop-es:nombre>
+		<!-- <p: xmlns:p="http://es.dbpedia.org/property/título" xml:lang="es">Castillos 
+			de España</p:> -->
+		<!-- <p: xmlns:p="http://es.dbpedia.org/property/título" xml:lang="es">Lorca 
+			y su historia</p:> -->
+		<!-- <p: xmlns:p="http://es.dbpedia.org/property/ubicación" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</p:> -->
+		<dbo:wikiPageID
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1167645</dbo:wikiPageID>
+		<dbo:wikiPageRevisionID
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">129816508</dbo:wikiPageRevisionID>
+		<dbo:wikiPageExternalLink
+			rdf:resource="http://www.lorcatallerdeltiempo.org/" />
+		<dbo:wikiPageExternalLink
+			rdf:resource="https://web.archive.org/web/20091005053201/http:/travesia.mcu.es/documentos/ley_phe.pdf" />
+		<dbo:wikiPageExternalLink
+			rdf:resource="http://www.laverdad.es/murcia/20090821/lorca/cultura-advirtio-2006-parador-20090821.html" />
+		<dbo:wikiPageExternalLink
+			rdf:resource="http://www.lorca.es/" />
+		<dbo:wikiPageLength
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">18965</dbo:wikiPageLength>
+		<prov:wasDerivedFrom
+			rdf:resource="http://es.wikipedia.org/wiki/Castillo_de_Lorca?oldid=129816508&amp;ns=0" />
+		<dbo:abstract xml:lang="es">El Castillo de Lorca (Murcia,
+			España) es una fortaleza de origen medieval construida entre los
+			siglos IX y XV. Comprende una serie de estructuras defensivas que,
+			durante la Edad Media, convirtieron a la ciudad y a su fortaleza en
+			un punto inexpugnable del sureste peninsular. El castillo de Lorca
+			fue un bastión clave en las contiendas entre cristianos y musulmanes
+			en la frontera de Granada. Se encuentra catalogado como Bien de
+			Interés Cultural​ y dentro de la delimitación del conjunto
+			histórico-artístico de Lorca.​​ Por su extensión, 640 metros de largo
+			por unos 120 metros en su punto más ancho, es uno de los castillos
+			más grandes de España.</dbo:abstract>
+	</rdf:Description>
+	<rdf:Description
+		rdf:about="http://es.wikipedia.org/wiki/Castillo_de_Lorca">
+		<foaf:primaryTopic
+			rdf:resource="http://es.dbpedia.org/resource/Castillo_de_Lorca" />
+	</rdf:Description>
+	<rdf:Description
+		rdf:about="http://es.dbpedia.org/resource/Parador_de_Lorca">
+		<dbo:wikiPageRedirects
+			rdf:resource="http://es.dbpedia.org/resource/Castillo_de_Lorca" />
+	</rdf:Description>
+</rdf:RDF>
