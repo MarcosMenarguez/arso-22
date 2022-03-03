@@ -1,0 +1,25 @@
+
+{
+    "asignatura": "1902",
+    "calificaciones": [
+        {
+            "nif": "23322156M",
+            "nota": 10.0
+        },
+        {
+            "nif": "13322156M",
+            "nombre": "Pepe",
+            "nota": 8.5
+        }
+    ],
+    "convocatoria": "febrero",
+    "curso": 2021,
+    "diligencias": [
+        {
+            "nif": "13322156M",
+            "nota": 10.0,
+            "extraordinaria": false,
+            "fecha": "2022-02-05"
+        }
+    ]
+}
