@@ -64,8 +64,9 @@ public class ServicioEncuestas implements IServicioEncuestas {
 		}
 		
 		// TODO
+		String id = repositorio.add(encuesta);
 		
-		return null;
+		return id;
 	}
 
 	@Override
@@ -74,7 +75,13 @@ public class ServicioEncuestas implements IServicioEncuestas {
 		if (usuario == null || usuario.isEmpty())
 			throw new IllegalArgumentException("usuario: no debe ser nulo ni vacio");
 		
-		// TODO		
+		// TODO
+		Encuesta encuesta = repositorio.getById(id);
+		
+		for (Opcion opcion : encuesta.getOpciones())
+			if (opcion.getVotos().contains(usuario))
+				return true;
+				
 		return false;
 		
 	}
@@ -83,7 +90,7 @@ public class ServicioEncuestas implements IServicioEncuestas {
 	public void votar(String id, int opcion, String usuario) throws RepositorioException, EntidadNoEncontrada {
 				
 		// TODO
-		Encuesta encuesta = null;
+		Encuesta encuesta = repositorio.getById(id);
 		
 		if (opcion < 1 || opcion > encuesta.getOpciones().size() )
 			throw new IllegalArgumentException("opcion: indice no valido");
@@ -103,19 +110,24 @@ public class ServicioEncuestas implements IServicioEncuestas {
 		int indice = opcion - 1; // desde 0
 		
 		// TODO
+		encuesta.getOpciones().get(indice).getVotos().add(usuario);
+		
 	}
 
 	@Override
 	public Encuesta getById(String id) throws RepositorioException, EntidadNoEncontrada {
 		
 		// TODO
-		return null;
+		return repositorio.getById(id);
 	}
 
 	@Override
 	public void remove(String id) throws RepositorioException, EntidadNoEncontrada {
 		
 		// TODO
+		Encuesta encuesta = repositorio.getById(id);
+		
+		repositorio.delete(encuesta);
 		
 	}
 
@@ -125,6 +137,15 @@ public class ServicioEncuestas implements IServicioEncuestas {
 		ListadoEncuestas listado = new ListadoEncuestas();
 		
 		// TODO
+		for (Encuesta encuesta : repositorio.getAll()) {
+			EncuestaResumen resumen = new EncuestaResumen();
+			resumen.setId(encuesta.getId().toString());
+			resumen.setTitulo(encuesta.getTitulo());
+			
+			listado.getEncuestas().add(resumen);
+			
+		}
+		
 		
 		return listado;
 	}

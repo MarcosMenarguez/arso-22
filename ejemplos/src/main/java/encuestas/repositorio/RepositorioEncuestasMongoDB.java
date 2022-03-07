@@ -30,7 +30,7 @@ public class RepositorioEncuestasMongoDB implements RepositorioEncuestas {
 		
 		// TODO: cadena de conexión
 		
-		String uriString = "uri";
+		String uriString = "mongodb+srv://arso:arso22@cluster0.mp1o0.azure.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 				
 		ConnectionString connectionString = new ConnectionString(uriString);
 
@@ -53,9 +53,9 @@ public class RepositorioEncuestasMongoDB implements RepositorioEncuestas {
 
 	protected boolean checkDocument(ObjectId id) {
 
-		// TODO
+		Encuesta encuesta = encuestas.find(Filters.eq("_id", id)).first();
 		
-		return false;
+		return encuesta != null;
 	}
 	
 
@@ -66,9 +66,12 @@ public class RepositorioEncuestasMongoDB implements RepositorioEncuestas {
 
 		try {
 			
-			// TODO
+			ObjectId id = new ObjectId();
+			encuesta.setId(id);
 			
-			return null;
+			encuestas.insertOne(encuesta);
+			
+			return id.toString();
 			
 		} catch (Exception e) {
 			throw new RepositorioException("No se ha podido insertar la entidad", e);
@@ -84,7 +87,8 @@ public class RepositorioEncuestasMongoDB implements RepositorioEncuestas {
 
 		try {
 			
-			// TODO
+			encuestas.replaceOne(Filters.eq("_id", encuesta.getId()), encuesta);
+			
 			
 		} catch (Exception e) {
 			throw new RepositorioException("No se ha podido actualizar la entidad, id:" + encuesta.getId(), e);
@@ -99,7 +103,7 @@ public class RepositorioEncuestasMongoDB implements RepositorioEncuestas {
 			throw new EntidadNoEncontrada("No existe la entidad con id:" + encuesta.getId());
 		
 		try {
-			// TODO
+			encuestas.deleteOne(Filters.eq("_id", encuesta.getId()));
 			
 		} catch (Exception e) {
 			throw new RepositorioException("No se ha podido borrar la entidad, id:" + encuesta.getId(), e);
@@ -110,8 +114,7 @@ public class RepositorioEncuestasMongoDB implements RepositorioEncuestas {
 	@Override
 	public Encuesta getById(String id) throws RepositorioException, EntidadNoEncontrada {
 
-		// TODO
-		Encuesta encuesta = null;
+		Encuesta encuesta = encuestas.find(Filters.eq("_id", new ObjectId(id))).first();
 		
 		if (encuesta == null)
 			throw new EntidadNoEncontrada("No existe la entidad con id:" + id);
@@ -124,7 +127,7 @@ public class RepositorioEncuestasMongoDB implements RepositorioEncuestas {
 		
 		LinkedList<Encuesta> allEncuestas = new LinkedList<>();
 
-		// TODO
+		encuestas.find().into(allEncuestas);
 		
 		return allEncuestas;
 	}
@@ -134,7 +137,8 @@ public class RepositorioEncuestasMongoDB implements RepositorioEncuestas {
 		
 		LinkedList<String> allIds = new LinkedList<String>();
 		
-		// TODO
+		encuestas.find().map(e -> e.getId().toString()).into(allIds);
+		
 		
 		return allIds;
 	}
