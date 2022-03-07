@@ -63,7 +63,6 @@ public class ServicioEncuestas implements IServicioEncuestas {
 				throw new IllegalArgumentException("opciones: no debe ser una coleccion nula");
 		}
 		
-		// TODO
 		String id = repositorio.add(encuesta);
 		
 		return id;
@@ -75,7 +74,6 @@ public class ServicioEncuestas implements IServicioEncuestas {
 		if (usuario == null || usuario.isEmpty())
 			throw new IllegalArgumentException("usuario: no debe ser nulo ni vacio");
 		
-		// TODO
 		Encuesta encuesta = repositorio.getById(id);
 		
 		for (Opcion opcion : encuesta.getOpciones())
@@ -89,7 +87,6 @@ public class ServicioEncuestas implements IServicioEncuestas {
 	@Override
 	public void votar(String id, int opcion, String usuario) throws RepositorioException, EntidadNoEncontrada {
 				
-		// TODO
 		Encuesta encuesta = repositorio.getById(id);
 		
 		if (opcion < 1 || opcion > encuesta.getOpciones().size() )
@@ -109,22 +106,21 @@ public class ServicioEncuestas implements IServicioEncuestas {
 		
 		int indice = opcion - 1; // desde 0
 		
-		// TODO
 		encuesta.getOpciones().get(indice).getVotos().add(usuario);
+		
+		repositorio.update(encuesta);
 		
 	}
 
 	@Override
 	public Encuesta getById(String id) throws RepositorioException, EntidadNoEncontrada {
 		
-		// TODO
 		return repositorio.getById(id);
 	}
 
 	@Override
 	public void remove(String id) throws RepositorioException, EntidadNoEncontrada {
 		
-		// TODO
 		Encuesta encuesta = repositorio.getById(id);
 		
 		repositorio.delete(encuesta);
@@ -136,7 +132,6 @@ public class ServicioEncuestas implements IServicioEncuestas {
 		
 		ListadoEncuestas listado = new ListadoEncuestas();
 		
-		// TODO
 		for (Encuesta encuesta : repositorio.getAll()) {
 			EncuestaResumen resumen = new EncuestaResumen();
 			resumen.setId(encuesta.getId().toString());

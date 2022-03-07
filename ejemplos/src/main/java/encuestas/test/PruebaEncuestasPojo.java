@@ -25,7 +25,7 @@ public class PruebaEncuestasPojo {
         CodecRegistry pojoCodecRegistry = fromRegistries(getDefaultCodecRegistry(), fromProviders(pojoCodecProvider));
 
         // Replace the uri string with your MongoDB deployment's connection string
-        String uri = "mongodb+srv://arso:arso22@cluster0.mp1o0.azure.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+        String uri = "uri";
 
         try (MongoClient mongoClient = MongoClients.create(uri)) {
             MongoDatabase database = mongoClient.getDatabase("arso").withCodecRegistry(pojoCodecRegistry);
