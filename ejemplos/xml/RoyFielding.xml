@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<rdf:RDF xmlns:dblp="https://dblp.org/rdf/schema#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:datacite="http://purl.org/spar/datacite/"
+	xmlns:dct="http://purl.org/dc/terms/"
+	xmlns:litre="http://purl.org/spar/literal/">
+	<dblp:Person rdf:about="https://dblp.org/pid/03/4572">
+		<rdf:type rdf:resource="https://dblp.org/rdf/schema#Creator" />
+		<owl:sameAs
+			rdf:resource="https://www.wikidata.org/entity/Q93076" />
+		<owl:sameAs
+			rdf:resource="https://id.loc.gov/authorities/names/no98062968" />
+		<rdfs:label>Roy T. Fielding</rdfs:label>
+		<dblp:wikidata
+			rdf:resource="https://www.wikidata.org/entity/Q93076" />
+		<datacite:hasIdentifier>
+			<datacite:PersonalIdentifier>
+				<datacite:usesIdentifierScheme
+					rdf:resource="http://purl.org/spar/datacite/dblp" />
+				<litre:hasLiteralValue>03/4572</litre:hasLiteralValue>
+			</datacite:PersonalIdentifier>
+		</datacite:hasIdentifier>
+		<datacite:hasIdentifier>
+			<datacite:PersonalIdentifier>
+				<datacite:usesIdentifierScheme
+					rdf:resource="http://purl.org/spar/datacite/acm" />
+				<litre:hasLiteralValue>81100283787</litre:hasLiteralValue>
+			</datacite:PersonalIdentifier>
+		</datacite:hasIdentifier>
+		<datacite:hasIdentifier>
+			<datacite:PersonalIdentifier>
+				<datacite:usesIdentifierScheme
+					rdf:resource="http://purl.org/spar/datacite/twitter" />
+				<litre:hasLiteralValue>fielding</litre:hasLiteralValue>
+			</datacite:PersonalIdentifier>
+		</datacite:hasIdentifier>
+		<datacite:hasIdentifier>
+			<datacite:Identifier>
+				<datacite:usesIdentifierScheme
+					rdf:resource="http://purl.org/spar/datacite/wikidata" />
+				<litre:hasLiteralValue>Q93076</litre:hasLiteralValue>
+			</datacite:Identifier>
+		</datacite:hasIdentifier>
+		<datacite:hasIdentifier>
+			<datacite:Identifier>
+				<datacite:usesIdentifierScheme
+					rdf:resource="http://purl.org/spar/datacite/loc" />
+				<litre:hasLiteralValue>names/no98062968</litre:hasLiteralValue>
+			</datacite:Identifier>
+		</datacite:hasIdentifier>
+		<dblp:primaryFullCreatorName>Roy T. Fielding
+		</dblp:primaryFullCreatorName>
+		<dblp:otherFullCreatorName>Roy Thomas Fielding
+		</dblp:otherFullCreatorName>
+		<dblp:primaryAffiliation>Day Software</dblp:primaryAffiliation>
+		<dblp:creatorNote>award (1999): ACM Software System Award
+		</dblp:creatorNote>
+		<dblp:primaryHomepage
+			rdf:resource="http://www.ics.uci.edu/~fielding/" />
+		<dblp:otherHomepage
+			rdf:resource="http://roy.gbiv.com/" />
+		<dblp:webpage
+			rdf:resource="https://dl.acm.org/profile/81100283787" />
+		<dblp:wikipedia
+			rdf:resource="https://en.wikipedia.org/wiki/Roy_Fielding" />
+		<dblp:webpage rdf:resource="https://twitter.com/fielding" />
+		<dblp:authorOf
+			rdf:resource="https://dblp.org/rec/conf/sigsoft/FieldingTEGWKO17" />
+		<dblp:authorOf
+			rdf:resource="https://dblp.org/rec/journals/rfc/rfc7230" />
+		<dblp:authorOf
+			rdf:resource="https://dblp.org/rec/journals/rfc/rfc7231" />
+		<dblp:authorOf
+			rdf:resource="https://dblp.org/rec/journals/rfc/rfc7232" />
+		<dblp:authorOf
+			rdf:resource="https://dblp.org/rec/journals/rfc/rfc7233" />
+		<dblp:authorOf
+			rdf:resource="https://dblp.org/rec/journals/rfc/rfc7234" />
+		<dblp:authorOf
+			rdf:resource="https://dblp.org/rec/journals/rfc/rfc7235" />
+		<dblp:authorOf
+			rdf:resource="https://dblp.org/rec/journals/rfc/rfc6570" />
+		<dblp:authorOf
+			rdf:resource="https://dblp.org/rec/journals/rfc/rfc6585" />
+		<dblp:authorOf
+			rdf:resource="https://dblp.org/rec/conf/icse/Fielding05" />
+		<dblp:authorOf
+			rdf:resource="https://dblp.org/rec/journals/rfc/rfc3986" />
+		<dblp:authorOf
+			rdf:resource="https://dblp.org/rec/journals/toit/FieldingT02" />
+		<dblp:authorOf
+			rdf:resource="https://dblp.org/rec/journals/tosem/MockusFH02" />
+		<dblp:authorOf
+			rdf:resource="https://dblp.org/rec/conf/icis/HannRSF02" />
+		<dblp:authorOf
+			rdf:resource="https://dblp.org/rec/conf/icse/MockusFH00" />
+		<dblp:authorOf
+			rdf:resource="https://dblp.org/rec/conf/icse/FieldingT00" />
+		<dblp:authorOf
+			rdf:resource="https://dblp.org/rec/journals/cacm/Fielding99" />
+		<dblp:authorOf
+			rdf:resource="https://dblp.org/rec/conf/webnet/Fielding99" />
+		<dblp:authorOf
+			rdf:resource="https://dblp.org/rec/journals/rfc/rfc2616" />
+		<dblp:authorOf
+			rdf:resource="https://dblp.org/rec/www/org/w3/http1-1" />
+		<dblp:authorOf
+			rdf:resource="https://dblp.org/rec/journals/cacm/FieldingWABOT98" />
+		<dblp:authorOf
+			rdf:resource="https://dblp.org/rec/journals/rfc/rfc2396" />
+		<dblp:authorOf
+			rdf:resource="https://dblp.org/rec/journals/internet/FieldingK97" />
+		<dblp:authorOf
+			rdf:resource="https://dblp.org/rec/journals/rfc/rfc2068" />
+		<dblp:authorOf
+			rdf:resource="https://dblp.org/rec/journals/rfc/rfc2145" />
+		<dblp:authorOf
+			rdf:resource="https://dblp.org/rec/journals/rfc/rfc1945" />
+		<dblp:authorOf
+			rdf:resource="https://dblp.org/rec/conf/dl/AckermanF95" />
+		<dblp:authorOf
+			rdf:resource="https://dblp.org/rec/journals/rfc/rfc1808" />
+		<dblp:authorOf
+			rdf:resource="https://dblp.org/rec/journals/cn/Fielding94" />
+		<dblp:authorOf
+			rdf:resource="https://dblp.org/rec/conf/icse/GrudinF94" />
+		<dblp:coCreatorWith
+			rdf:resource="https://dblp.org/pid/a/MSAckerman" />
+		<dblp:coCreatorWith
+			rdf:resource="https://dblp.org/pid/32/3820" />
+		<dblp:coCreatorWith
+			rdf:resource="https://dblp.org/pid/b/TimBernersLee" />
+		<dblp:coCreatorWith
+			rdf:resource="https://dblp.org/pid/08/874" />
+		<dblp:coCreatorWith
+			rdf:resource="https://dblp.org/pid/73/5654" />
+		<dblp:coCreatorWith
+			rdf:resource="https://dblp.org/pid/72/5069" />
+		<dblp:coCreatorWith
+			rdf:resource="https://dblp.org/pid/69/4848" />
+		<dblp:coCreatorWith
+			rdf:resource="https://dblp.org/pid/43/8024" />
+		<dblp:coCreatorWith
+			rdf:resource="https://dblp.org/pid/g/JonathanGrudin" />
+		<dblp:coCreatorWith
+			rdf:resource="https://dblp.org/pid/77/8110" />
+		<dblp:coCreatorWith
+			rdf:resource="https://dblp.org/pid/72/3960" />
+		<dblp:coCreatorWith
+			rdf:resource="https://dblp.org/pid/h/JamesDHerbsleb" />
+		<dblp:coCreatorWith
+			rdf:resource="https://dblp.org/pid/k/GailEKaiser" />
+		<dblp:coCreatorWith
+			rdf:resource="https://dblp.org/pid/k/RohitKhare" />
+		<dblp:coCreatorWith
+			rdf:resource="https://dblp.org/pid/66/8024" />
+		<dblp:coCreatorWith
+			rdf:resource="https://dblp.org/pid/72/6821" />
+		<dblp:coCreatorWith
+			rdf:resource="https://dblp.org/pid/78/3899" />
+		<dblp:coCreatorWith
+			rdf:resource="https://dblp.org/pid/79/6124" />
+		<dblp:coCreatorWith
+			rdf:resource="https://dblp.org/pid/m/JeffreyCMogul" />
+		<dblp:coCreatorWith
+			rdf:resource="https://dblp.org/pid/71/6238" />
+		<dblp:coCreatorWith
+			rdf:resource="https://dblp.org/pid/209/4700" />
+		<dblp:coCreatorWith
+			rdf:resource="https://dblp.org/pid/210/0673" />
+		<dblp:coCreatorWith
+			rdf:resource="https://dblp.org/pid/78/6209" />
+		<dblp:coCreatorWith
+			rdf:resource="https://dblp.org/pid/209/4678" />
+		<dblp:coCreatorWith
+			rdf:resource="https://dblp.org/pid/84/6767" />
+		<dblp:coCreatorWith
+			rdf:resource="https://dblp.org/pid/s/SandraSlaughter" />
+		<dblp:coCreatorWith
+			rdf:resource="https://dblp.org/pid/t/RichardNTaylor" />
+		<dblp:coCreatorWith
+			rdf:resource="https://dblp.org/pid/w/EJWhiteheadJr" />
+	</dblp:Person>
+	<rdf:Description
+		rdf:about="https://dblp.org/pid/03/4572.rdf">
+		<rdfs:label>provenance information for RDF data of dblp person
+			&apos;03/4572&apos;</rdfs:label>
+		<dct:creator rdf:resource="https://dblp.org" />
+		<dct:isPartOf
+			rdf:resource="https://dblp.org/rdf/dblp.rdf" />
+		<dct:license
+			rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/" />
+		<dct:modified>2021-11-17T23:58:05+0100</dct:modified>
+	</rdf:Description>
+</rdf:RDF>
