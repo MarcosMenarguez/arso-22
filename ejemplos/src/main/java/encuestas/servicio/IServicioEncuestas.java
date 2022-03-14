@@ -1,9 +1,12 @@
 package encuestas.servicio;
 
+import javax.jws.WebService;
+
 import encuestas.modelo.Encuesta;
 import repositorio.EntidadNoEncontrada;
 import repositorio.RepositorioException;
 
+@WebService
 public interface IServicioEncuestas {
 
 	String create(Encuesta encuesta) throws RepositorioException;

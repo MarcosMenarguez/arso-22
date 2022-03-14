@@ -3,6 +3,9 @@ package encuestas.modelo;
 import java.time.LocalDateTime;
 import java.util.LinkedList;
 
+import javax.xml.bind.annotation.XmlTransient;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
+
 import org.bson.codecs.pojo.annotations.BsonId;
 import org.bson.types.ObjectId;
 
@@ -18,6 +21,15 @@ public class Encuesta {
 	private LocalDateTime cierre;
 	private LinkedList<Opcion> opciones = new LinkedList<>();
 	
+	public String getIdentificador() {
+		return this.id.toString();
+	}
+	
+	public void setIdentificador(String identificador) {
+		this.id = new ObjectId(identificador);
+	}
+	
+	@XmlTransient
 	public ObjectId getId() {
 		return id;
 	}
@@ -41,12 +53,16 @@ public class Encuesta {
 	public void setInstruccion(String instruccion) {
 		this.instruccion = instruccion;
 	}
+	
+	@XmlJavaTypeAdapter(value = LocalDateAdapter.class)
 	public LocalDateTime getApertura() {
 		return apertura;
 	}
 	public void setApertura(LocalDateTime apertura) {
 		this.apertura = apertura;
 	}
+	
+	@XmlJavaTypeAdapter(value = LocalDateAdapter.class)
 	public LocalDateTime getCierre() {
 		return cierre;
 	}

@@ -2,6 +2,8 @@ package encuestas.servicio;
 
 import java.time.LocalDateTime;
 
+import javax.jws.WebService;
+
 import encuestas.servicio.ListadoEncuestas.EncuestaResumen;
 import encuestas.modelo.Encuesta;
 import encuestas.modelo.Opcion;
@@ -10,6 +12,7 @@ import encuestas.repositorio.RepositorioEncuestas;
 import repositorio.EntidadNoEncontrada;
 import repositorio.RepositorioException;
 
+@WebService(endpointInterface = "encuestas.servicio.IServicioEncuestas")
 public class ServicioEncuestas implements IServicioEncuestas {
 
 	private RepositorioEncuestas repositorio = FactoriaRepositorioEncuestas.getRepositorio();
