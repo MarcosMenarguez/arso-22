@@ -54,7 +54,7 @@ public class Encuesta {
 		this.instruccion = instruccion;
 	}
 	
-	@XmlJavaTypeAdapter(value = LocalDateAdapter.class)
+	@XmlJavaTypeAdapter(value = LocalDateTimeAdapter.class)
 	public LocalDateTime getApertura() {
 		return apertura;
 	}
@@ -62,7 +62,7 @@ public class Encuesta {
 		this.apertura = apertura;
 	}
 	
-	@XmlJavaTypeAdapter(value = LocalDateAdapter.class)
+	@XmlJavaTypeAdapter(value = LocalDateTimeAdapter.class)
 	public LocalDateTime getCierre() {
 		return cierre;
 	}

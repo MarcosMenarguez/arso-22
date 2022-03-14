@@ -20,6 +20,7 @@ public class Programa {
 		Encuesta encuesta = new Encuesta();
 		
 		encuesta.setTitulo("Fecha del parcial");
+		// Importante: las fechas se introducen como cadenas.
 		encuesta.setApertura(LocalDateTime.now().toString());
 		encuesta.setCierre(LocalDateTime.now().plusDays(1).toString());
 				

@@ -30,7 +30,7 @@ public class RepositorioEncuestasMongoDB implements RepositorioEncuestas {
 		
 		// TODO: cadena de conexión
 		
-		String uriString = "mongodb+srv://arso:arso-21-22@cluster0.mp1o0.azure.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+		String uriString = "uri";
 				
 		ConnectionString connectionString = new ConnectionString(uriString);
 
