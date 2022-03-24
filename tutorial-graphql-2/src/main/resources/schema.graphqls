@@ -1,0 +1,27 @@
+type Enlace {
+  id: String!
+  url: String!
+  descripcion: String!
+  publicadoPor: Usuario! # Relación con Usuario
+}
+
+type Usuario {
+	nombre: String!
+	email: String! # identificador
+}
+
+type Query {
+  allEnlaces: [Enlace]
+  allUsuarios: [Usuario]
+  usuarioByEmail(email: String!): Usuario  
+}
+
+type Mutation {
+  crearEnlace(url: String!, descripcion: String!, emailUsuario: String!): Enlace
+}
+
+schema {
+  query: Query
+  mutation: Mutation
+}
+
