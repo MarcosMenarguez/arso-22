@@ -1,0 +1,16 @@
+{
+	"titulo": "Fecha del parcial",
+	"apertura": "2022-03-21T11:25:33.227",
+	"cierre": "2022-03-22T11:25:33.23",
+	"opciones": [
+		{
+			"texto": "Jueves"
+			
+		},
+		{
+			"texto": "Viernes"
+			
+		}
+	]
+	
+}
