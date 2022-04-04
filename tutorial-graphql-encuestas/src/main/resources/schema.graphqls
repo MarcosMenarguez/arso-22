@@ -1,0 +1,31 @@
+type Encuesta {
+  id: String!
+  titulo: String!
+  instruccion: String
+  apertura: String!
+  cierre: String!
+  opciones: [Opcion]! 
+}
+
+type Opcion {
+ texto: String!
+ votos: [String]!
+}
+
+type Query {
+  getEncuesta(id: String!): Encuesta!
+}
+
+type Mutation {
+  crearEncuesta(titulo: String!, 
+  		instruccion: String,
+  		apertura: String!,
+  		cierre: String!, 
+  		opciones: [String]!): Encuesta!
+}
+
+schema {
+  query: Query
+  mutation: Mutation
+}
+
