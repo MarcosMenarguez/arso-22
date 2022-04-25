@@ -5,10 +5,18 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Optional;
 
+import javax.json.bind.Jsonb;
+import javax.json.bind.spi.JsonbProvider;
 import javax.xml.datatype.XMLGregorianCalendar;
 
 import org.xml.sax.SAXParseException;
 
+import com.rabbitmq.client.AMQP;
+import com.rabbitmq.client.Channel;
+import com.rabbitmq.client.Connection;
+import com.rabbitmq.client.ConnectionFactory;
+
+import bookle.eventos.EventoReservaCreada;
 import bookle.repositorio.FactoriaRepositorioActividades;
 import bookle.repositorio.RepositorioActividades;
 import es.um.bookle.Actividad;
@@ -130,9 +138,64 @@ public class ServicioBookle implements IServicioBookle {
 
 		repositorio.update(actividad);
 
+		// Notificar evento reserva creada
+		
+		// 1. Crear el evento
+		
+		EventoReservaCreada evento = new EventoReservaCreada();
+		evento.setTitulo(actividad.getTitulo());
+		evento.setDescripcion(diaActividad.getFecha().toString()
+				+ " - " + turno.getHorario());
+		evento.getUsuarios().add(actividad.getEmail()); // profesor
+		evento.getUsuarios().add(reserva.getEmail()); // estudiante
+		
+		
+		// 2. Notificarlo
+		notificarEvento(evento);
+		
 		return true;
 	}
 
+	protected void notificarEvento(EventoReservaCreada evento) {
+		
+		try {
+		ConnectionFactory factory = new ConnectionFactory();
+		// TODO uri
+		
+		factory.setUri("uri");
+
+		Connection connection = factory.newConnection();
+
+		Channel channel = connection.createChannel();
+
+		/** Declaración del Exchange **/
+
+		final String exchangeName = "arso-exchange";
+		
+		boolean durable = true;
+		channel.exchangeDeclare(exchangeName, "direct", durable);
+
+		/** Envío del mensaje **/
+		
+		Jsonb contexto = JsonbProvider.provider().create().build();
+
+		String cadenaJSON = contexto.toJson(evento);
+
+		String mensaje = cadenaJSON;
+		
+		String routingKey = "arso";
+		channel.basicPublish(exchangeName, routingKey, new AMQP.BasicProperties.Builder()
+				.contentType("application/json")
+				.build(), mensaje.getBytes());
+
+		channel.close();
+		connection.close();
+		} catch(Exception e) {
+			
+			throw new RuntimeException(e);
+		}
+	}
+	
 	@Override
 	public List<ActividadResumen> getListadoActividades() throws RepositorioException {
 
