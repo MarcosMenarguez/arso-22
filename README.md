@@ -9,7 +9,7 @@ Este repositorio contiene los proyectos utilizados en clase:
 - `bookle-rest`: aplicación web que implementa un controlador REST para el caso de estudio *Bookle*.
 - `tutorial-graphql`: proyectos que desarrollan el caso de estudio de la presentación de GraphQL.
 - `agendas-graphql`: proyecto GraphQL que implementa el servicio Agendas, consumidor del evento "reserva creada" de Bookle.
-- `Bookle-Api': implementación del servicio Bookle en la plataforma .NET.
+- `Bookle-Api`: implementación del servicio Bookle en la plataforma .NET.
 - `Encuestas-Api`: implementación parcial del servicio Encuestas en la plataforma .NET.
 
 
