@@ -28,9 +28,9 @@ public class RepositorioEncuestasMongoDB implements RepositorioEncuestas {
 	
 	public RepositorioEncuestasMongoDB() {
 		
-		// TODO: cadena de conexión
+		// Se obtiene la conexión de una variable de entorno
 		
-		String uriString = "uri";
+		String uriString = System.getenv("MONGODB_URI");
 				
 		ConnectionString connectionString = new ConnectionString(uriString);
 
